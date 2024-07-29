@@ -8,9 +8,6 @@ This project is a microservices-based application for creating and managing quiz
 - [Architecture](#architecture)
 - [Services](#services)
 - [Getting Started](#getting-started)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
