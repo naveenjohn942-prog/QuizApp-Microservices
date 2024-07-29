@@ -48,8 +48,7 @@ Each service is independently deployable and communicates with other services vi
 ### Prerequisites
 
 - Java 11 or higher
-- Maven 3.6.3 or higher
-- Docker (optional, for containerization)
+- Maven 3.3.2 or higher
 
 ### Running the Application
 
