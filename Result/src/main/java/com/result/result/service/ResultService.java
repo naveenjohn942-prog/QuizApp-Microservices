@@ -10,5 +10,5 @@ public interface ResultService {
     List<Result> getResultsByQuizId(Long quizId);
     Result getResult(Long id);
     Result calculateResult(Long quizId, Long userId, List<Long> questionIds, List<String> answers);
-
+    Result getResultByUserIdAndQuizId(Long userId, Long quizId);
 }

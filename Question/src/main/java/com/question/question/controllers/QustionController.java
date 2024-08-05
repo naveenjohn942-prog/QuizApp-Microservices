@@ -20,6 +20,11 @@ public class QustionController {
         return questionService.createQuestion(question);
     }
 
+    @PostMapping("/AddAllQuestion")
+    public void addQuestions(@RequestBody List<Question> questions) {
+        questionService.saveAll(questions);
+    }
+
     @GetMapping
     public List<Question> getAllQuestions() {
         return questionService.getAllQuestions();
@@ -39,4 +44,5 @@ public class QustionController {
         questionService.deleteQustionById(id);
         return "Question deleted";
     }
+
 }

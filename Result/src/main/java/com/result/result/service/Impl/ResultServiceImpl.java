@@ -67,6 +67,11 @@ public class ResultServiceImpl implements ResultService {
     }
 
     @Override
+    public Result getResultByUserIdAndQuizId(Long userId, Long quizId) {
+        return resultRepository.findByUserIdAndQuizId(userId, quizId);
+    }
+
+    @Override
     public Result addResult(Result result) {
         return resultRepository.save(result);
     }

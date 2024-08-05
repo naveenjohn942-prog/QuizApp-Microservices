@@ -41,4 +41,9 @@ public class QustionServiceImpl implements QuestionService {
     public List<Question> getQuestionsOfQuiz(long id) {
         return questionRepo.findByQuizId(id);
     }
+
+    @Override
+    public void saveAll(List<Question> questions) {
+        questionRepo.saveAll(questions);
+    }
 }

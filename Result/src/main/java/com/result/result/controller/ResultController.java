@@ -41,4 +41,8 @@ public class ResultController {
         return resultService.calculateResult(quizId, userId, request.getQuestionIds(), request.getAnswers());
     }
 
+    @GetMapping("/user/{userId}/quiz/{quizId}")
+    public Result getResultByUserIdAndQuizId(@PathVariable Long userId, @PathVariable Long quizId) {
+        return resultService.getResultByUserIdAndQuizId(userId, quizId);
+    }
 }

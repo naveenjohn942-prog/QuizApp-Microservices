@@ -11,4 +11,6 @@ public interface QuestionService {
 
     void deleteQustionById(int id);
     List<Question> getQuestionsOfQuiz(long id);
+
+    void saveAll(List<Question> questions);
 }
