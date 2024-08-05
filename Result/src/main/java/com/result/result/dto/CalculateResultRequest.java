@@ -12,6 +12,8 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CalculateResultRequest {
+    private Long quizId;
+    private Long userId;
     private List<Long> questionIds;
     private List<String> answers;
 }

@@ -37,9 +37,10 @@ public class ResultController {
     }
 
     @PostMapping("/calculate")
-    public Result calculateResult(@RequestParam Long quizId, @RequestParam Long userId, @RequestBody CalculateResultRequest request) {
-        return resultService.calculateResult(quizId, userId, request.getQuestionIds(), request.getAnswers());
+    public Result calculateResult(@RequestBody CalculateResultRequest request) {
+        return resultService.calculateResult(request.getQuizId(), request.getUserId(), request.getQuestionIds(), request.getAnswers());
     }
+
 
     @GetMapping("/user/{userId}/quiz/{quizId}")
     public Result getResultByUserIdAndQuizId(@PathVariable Long userId, @PathVariable Long quizId) {
